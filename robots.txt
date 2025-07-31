@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blue-expo.com/sitemap.xml
+
+# Disallow admin and private areas (if added later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /assets/uploads/temp/
+
+# Allow specific search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay for courtesy
+Crawl-delay: 1

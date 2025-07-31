@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="茨城県筑西市で開催される地域貢献イベント「Blue Expo（ブルーエキスポ）」の公式サイト。地元企業・団体が参加する地域最大級のお祭りイベントです。">
+    <meta name="keywords" content="Blue Expo,ブルーエキスポ,茨城県,筑西市,イベント,祭り,商工会,地域活性化">
+    <meta name="author" content="茨城県商工会">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blue-expo.com/">
+    <meta property="og:title" content="Blue Expo（ブルーエキスポ）- 茨城県筑西市の地域貢献イベント">
+    <meta property="og:description" content="茨城県筑西市で開催される地域貢献イベント「Blue Expo（ブルーエキスポ）」の公式サイト">
+    <meta property="og:image" content="https://blue-expo.com/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://blue-expo.com/">
+    <meta property="twitter:title" content="Blue Expo（ブルーエキスポ）- 茨城県筑西市の地域貢献イベント">
+    <meta property="twitter:description" content="茨城県筑西市で開催される地域貢献イベント「Blue Expo（ブルーエキスポ）」の公式サイト">
+    <meta property="twitter:image" content="https://blue-expo.com/assets/images/og-image.jpg">
+
+    <title>Blue Expo（ブルーエキスポ）- 茨城県筑西市の地域貢献イベント | 公式サイト</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Emergency Alert Banner -->
+    <div id="emergency-alert" class="emergency-alert d-none">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-11">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <span id="emergency-message">重要なお知らせがあります</span>
+                </div>
+                <div class="col-1 text-end">
+                    <button class="btn-close btn-close-white" onclick="closeEmergencyAlert()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <div class="brand-logo">
+                        <i class="fas fa-water brand-icon"></i>
+                        <div class="brand-text">
+                            <span class="brand-name">Blue Expo</span>
+                            <span class="brand-subtitle">ブルーエキスポ</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="header-info d-none d-lg-block">
+                    <div class="event-date">
+                        <i class="far fa-calendar-alt me-2"></i>
+                        <span>開催日程調整中</span>
+                    </div>
+                    <div class="event-location">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span>茨城県筑西市</span>
+                    </div>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">ホーム</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="eventDropdown" role="button" data-bs-toggle="dropdown">
+                                イベント情報
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#about">開催概要</a></li>
+                                <li><a class="dropdown-item" href="#program">プログラム</a></li>
+                                <li><a class="dropdown-item" href="#history">イベントの歴史</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#access">アクセス・会場</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exhibitors">出店者・協賛</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#volunteer">ボランティア</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Swiper -->
+    <section id="home" class="hero-section">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+                        <div class="hero-overlay"></div>
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                                        <h1 class="hero-title">
+                                            <span class="title-main">Blue Expo</span>
+                                            <span class="title-sub">ブルーエキスポ</span>
+                                        </h1>
+                                        <p class="hero-subtitle">茨城県筑西市で開催される<br>地域貢献イベント</p>
+                                        <div class="hero-info">
+                                            <div class="info-card">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <div>
+                                                    <span class="info-label">開催日程</span>
+                                                    <span class="info-value">調整中</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-card">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <div>
+                                                    <span class="info-label">開催場所</span>
+                                                    <span class="info-value">茨城県筑西市</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-card">
+                                                <i class="fas fa-users"></i>
+                                                <div>
+                                                    <span class="info-label">主催</span>
+                                                    <span class="info-value">茨城県商工会</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hero-buttons">
+                                            <a href="#about" class="btn btn-primary btn-lg">
+                                                <i class="fas fa-info-circle me-2"></i>
+                                                詳細を見る
+                                            </a>
+                                            <a href="#access" class="btn btn-outline-light btn-lg">
+                                                <i class="fas fa-map-marked-alt me-2"></i>
+                                                アクセス
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                                        <div class="hero-image-placeholder">
+                                            <i class="fas fa-image"></i>
+                                            <p>メインビジュアル<br>（写真配置予定）</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%);">
+                        <div class="hero-overlay"></div>
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center text-center">
+                                <div class="col-12">
+                                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                                        <h2 class="hero-title">地域の魅力を発信</h2>
+                                        <p class="hero-subtitle">筑西市の特産品・文化・伝統を<br>県内外の皆様にお届けします</p>
+                                        <a href="#exhibitors" class="btn btn-light btn-lg">
+                                            <i class="fas fa-store me-2"></i>
+                                            出店者情報
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
+                        <div class="hero-overlay"></div>
+                        <div class="container h-100">
+                            <div class="row h-100 align-items-center text-center">
+                                <div class="col-12">
+                                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                                        <h2 class="hero-title">ボランティア募集中</h2>
+                                        <p class="hero-subtitle">地域のために一緒に活動してくださる<br>ボランティアスタッフを募集しています</p>
+                                        <a href="#volunteer" class="btn btn-light btn-lg">
+                                            <i class="fas fa-heart me-2"></i>
+                                            ボランティア応募
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">SCROLL</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-bullhorn me-3"></i>
+                            最新情報・お知らせ
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Blue Expoに関する最新の情報をお届けします
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="news-card important">
+                        <div class="news-badge">重要</div>
+                        <div class="news-date">2024.07.31</div>
+                        <h3 class="news-title">公式サイト開設のお知らせ</h3>
+                        <p class="news-excerpt">Blue Expo（ブルーエキスポ）の公式ウェブサイトを開設いたしました。イベントの最新情報を随時更新してまいります。</p>
+                        <a href="#" class="news-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="news-card">
+                        <div class="news-date">2024.07.25</div>
+                        <h3 class="news-title">出店者・協賛企業募集開始</h3>
+                        <p class="news-excerpt">Blue Expoへの出店および協賛をご希望の企業・団体様の募集を開始いたします。詳細はお問い合わせください。</p>
+                        <a href="#" class="news-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <article class="news-card">
+                        <div class="news-date">2024.07.20</div>
+                        <h3 class="news-title">ボランティアスタッフ募集</h3>
+                        <p class="news-excerpt">イベント運営をお手伝いいただけるボランティアスタッフを募集しています。地域のために一緒に活動しませんか？</p>
+                        <a href="#" class="news-link">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+                <a href="#" class="btn btn-outline-primary btn-lg">
+                    すべてのお知らせを見る
+                    <i class="fas fa-list ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather" class="weather-section py-4 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="weather-info">
+                        <h3 class="weather-title">
+                            <i class="fas fa-cloud-sun me-2"></i>
+                            開催地の天気予報
+                        </h3>
+                        <p class="weather-subtitle">茨城県筑西市の天気をチェック</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="weather-widget">
+                        <div class="weather-placeholder">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span>天気情報を読み込み中...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-info-circle me-3"></i>
+                            開催概要
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            Blue Expoについて詳しくご紹介します
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="about-title">地域の魅力を発信する特別なイベント</h3>
+                        <p class="about-text">
+                            Blue Expo（ブルーエキスポ）は、茨城県筑西市で開催される地域貢献イベントです。
+                            地元企業・団体が一丸となって、筑西市の魅力を県内外の皆様にお届けします。
+                        </p>
+                        <p class="about-text">
+                            地域の特産品、伝統工芸、文化を通じて、新たな出会いとつながりを創出し、
+                            地域経済の活性化と住民コミュニティの強化を目指しています。
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">10,000</div>
+                                <div class="stat-label">目標来場者数</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100+</div>
+                                <div class="stat-label">参加企業・団体</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1st</div>
+                                <div class="stat-label">記念すべき第1回</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-visual">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>イベント紹介画像<br>（配置予定）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="feature-title">地域貢献</h4>
+                        <p class="feature-text">地元企業・団体が一丸となって筑西市の活性化に貢献する地域密着型イベントです。</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4 class="feature-title">交流促進</h4>
+                        <p class="feature-text">住民同士、企業間、来場者との新たな出会いとつながりを創出します。</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="feature-title">地域自慢</h4>
+                        <p class="feature-text">筑西市の特産品、伝統工芸、文化を県内外の方々に広くPRします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="program-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-calendar-check me-3"></i>
+                            プログラム
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            当日のタイムスケジュールをご紹介します
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="program-timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-time">10:00</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">オープニングセレモニー</h4>
+                        <p class="timeline-description">主催者挨拶、テープカット、地元小学生による合唱披露</p>
+                        <div class="timeline-tags">
+                            <span class="tag">セレモニー</span>
+                            <span class="tag">音楽</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="timeline-time">12:00</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">地元グルメフェスタ開始</h4>
+                        <p class="timeline-description">筑西市の特産品・地元グルメの販売、試食コーナー</p>
+                        <div class="timeline-tags">
+                            <span class="tag">グルメ</span>
+                            <span class="tag">特産品</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                    <div class="timeline-time">13:00</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">体験ワークショップ</h4>
+                        <p class="timeline-description">伝統工芸体験、地元企業による製品紹介・体験コーナー</p>
+                        <div class="timeline-tags">
+                            <span class="tag">体験</span>
+                            <span class="tag">工芸</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="500">
+                    <div class="timeline-time">15:00</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">ステージイベント</h4>
+                        <p class="timeline-description">地元バンド演奏、ダンスパフォーマンス、お楽しみ抽選会</p>
+                        <div class="timeline-tags">
+                            <span class="tag">音楽</span>
+                            <span class="tag">抽選会</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="600">
+                    <div class="timeline-time">17:00</div>
+                    <div class="timeline-content">
+                        <h4 class="timeline-title">クロージングセレモニー</h4>
+                        <p class="timeline-description">挨拶、次回開催予告、記念撮影</p>
+                        <div class="timeline-tags">
+                            <span class="tag">セレモニー</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
+                <div class="program-note">
+                    <i class="fas fa-info-circle me-2"></i>
+                    プログラムは予告なく変更される場合があります。最新情報は当サイトでご確認ください。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section id="quick-access" class="quick-access-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-tachometer-alt me-3"></i>
+                            クイックアクセス
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            よくご利用いただく情報へ素早くアクセス
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="#access" class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h4 class="quick-title">アクセス・駐車場</h4>
+                        <p class="quick-text">会場への行き方と駐車場情報</p>
+                        <div class="quick-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="#exhibitors" class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4 class="quick-title">出店者情報</h4>
+                        <p class="quick-text">参加企業・団体の詳細</p>
+                        <div class="quick-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="#volunteer" class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4 class="quick-title">ボランティア募集</h4>
+                        <p class="quick-text">一緒に運営をお手伝い</p>
+                        <div class="quick-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="#contact" class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="quick-title">お問い合わせ</h4>
+                        <p class="quick-text">ご質問・ご相談はこちら</p>
+                        <div class="quick-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="access-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-map-marked-alt me-3"></i>
+                            アクセス・会場案内
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            会場への行き方と周辺情報をご案内します
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="access-info">
+                        <div class="access-card mb-4">
+                            <div class="access-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>会場情報</h4>
+                            </div>
+                            <div class="access-content">
+                                <p><strong>会場名：</strong>未定（茨城県筑西市内）</p>
+                                <p><strong>住所：</strong>詳細は後日発表いたします</p>
+                                <p><strong>開催時間：</strong>10:00 - 17:00（予定）</p>
+                            </div>
+                        </div>
+                        
+                        <div class="access-card mb-4">
+                            <div class="access-header">
+                                <i class="fas fa-train"></i>
+                                <h4>電車でのアクセス</h4>
+                            </div>
+                            <div class="access-content">
+                                <div class="access-route">
+                                    <span class="route-step">JR水戸線</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span class="route-step">下館駅</span>
+                                    <i class="fas fa-walking"></i>
+                                    <span class="route-step">徒歩約10分</span>
+                                </div>
+                                <p class="route-note">
+                                    <i class="fas fa-info-circle"></i>
+                                    最寄り駅からの詳細ルートは後日ご案内いたします
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="access-card">
+                            <div class="access-header">
+                                <i class="fas fa-car"></i>
+                                <h4>お車でのアクセス</h4>
+                            </div>
+                            <div class="access-content">
+                                <div class="access-route">
+                                    <span class="route-step">北関東自動車道</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span class="route-step">桜川筑西IC</span>
+                                    <i class="fas fa-car"></i>
+                                    <span class="route-step">約15分</span>
+                                </div>
+                                <div class="parking-info">
+                                    <h5><i class="fas fa-parking"></i> 駐車場情報</h5>
+                                    <ul>
+                                        <li>無料駐車場をご用意予定</li>
+                                        <li>台数に限りがございます</li>
+                                        <li>公共交通機関のご利用をお勧めします</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map display-4 mb-3"></i>
+                            <h5>会場マップ</h5>
+                            <p>詳細な会場マップは<br>後日掲載予定です</p>
+                            <div class="map-buttons">
+                                <button class="btn btn-primary" disabled>
+                                    <i class="fas fa-directions"></i>
+                                    ルート検索
+                                </button>
+                                <button class="btn btn-outline-primary" disabled>
+                                    <i class="fas fa-download"></i>
+                                    マップダウンロード
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="access-tips mt-4">
+                        <h5><i class="fas fa-lightbulb"></i> アクセスのご注意</h5>
+                        <div class="tips-list">
+                            <div class="tip-item">
+                                <i class="fas fa-clock"></i>
+                                <span>開催時間の30分前から受付開始予定</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>天候により開催内容が変更される場合があります</span>
+                            </div>
+                            <div class="tip-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>最新情報は公式サイトでご確認ください</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitors Section -->
+    <section id="exhibitors" class="exhibitors-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-store me-3"></i>
+                            出店者・協賛企業
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            地元の魅力あふれる企業・団体が参加予定
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="exhibitor-categories">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h4 class="category-title">グルメ・特産品</h4>
+                            <p class="category-description">筑西市の美味しいグルメと特産品が大集合</p>
+                            <ul class="category-list">
+                                <li>地元レストラン・カフェ</li>
+                                <li>農産物直売</li>
+                                <li>伝統食品・加工品</li>
+                                <li>地酒・地ビール</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-hammer"></i>
+                            </div>
+                            <h4 class="category-title">伝統工芸・職人</h4>
+                            <p class="category-description">茨城の伝統工芸品の展示・販売</p>
+                            <ul class="category-list">
+                                <li>陶芸・焼き物</li>
+                                <li>木工・竹細工</li>
+                                <li>織物・染物</li>
+                                <li>職人実演コーナー</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-card">
+                            <div class="category-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h4 class="category-title">地元企業</h4>
+                            <p class="category-description">筑西市で活躍する企業のPR</p>
+                            <ul class="category-list">
+                                <li>製造業・技術紹介</li>
+                                <li>サービス業PR</li>
+                                <li>商業・小売業</li>
+                                <li>体験・相談コーナー</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sponsor-section" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="sponsor-title text-center mb-4">
+                    <i class="fas fa-handshake me-2"></i>
+                    協賛企業様（募集中）
+                </h3>
+                <div class="sponsor-grid">
+                    <div class="sponsor-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>協賛企業様のロゴを掲載予定</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="600">
+                <div class="cta-section">
+                    <h4>出店・協賛をご希望の企業・団体様</h4>
+                    <p>Blue Expoで地域の魅力を一緒に発信しませんか？</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-store me-2"></i>
+                            出店のお問い合わせ
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-handshake me-2"></i>
+                            協賛のお問い合わせ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-heart me-3"></i>
+                            ボランティア募集
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            地域のために一緒に活動してくださる方を募集しています
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="volunteer-hero" data-aos="fade-up" data-aos-delay="200">
+                        <div class="volunteer-hero-content">
+                            <h3>あなたの力で地域を盛り上げませんか？</h3>
+                            <p>Blue Expoの成功は、地域の皆様のご協力があってこそ実現します。一緒に素晴らしいイベントを作り上げましょう！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="volunteer-info-card">
+                        <h4><i class="fas fa-users me-2"></i>募集内容</h4>
+                        <div class="volunteer-roles">
+                            <div class="role-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <strong>受付・案内スタッフ</strong>
+                                    <p>来場者への案内、会場整理</p>
+                                </div>
+                            </div>
+                            <div class="role-item">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <strong>会場設営・撤去サポート</strong>
+                                    <p>テント設営、機材運搬のお手伝い</p>
+                                </div>
+                            </div>
+                            <div class="role-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <strong>駐車場・交通整理</strong>
+                                    <p>駐車場案内、安全確保</p>
+                                </div>
+                            </div>
+                            <div class="role-item">
+                                <i class="fas fa-broom"></i>
+                                <div>
+                                    <strong>清掃・環境整備</strong>
+                                    <p>会場美化、ゴミ分別サポート</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="volunteer-info-card">
+                        <h4><i class="fas fa-clock me-2"></i>活動時間</h4>
+                        <div class="time-schedule">
+                            <div class="schedule-item">
+                                <span class="schedule-date">前日準備</span>
+                                <span class="schedule-time">14:00 - 17:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="schedule-date">当日運営</span>
+                                <span class="schedule-time">9:00 - 18:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="schedule-date">後日片付け</span>
+                                <span class="schedule-time">9:00 - 12:00</span>
+                            </div>
+                        </div>
+                        <p class="schedule-note">
+                            <i class="fas fa-info-circle"></i>
+                            時間は調整可能です。できる範囲でのご参加をお待ちしています。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="500">
+                    <div class="volunteer-info-card">
+                        <h4><i class="fas fa-gift me-2"></i>参加特典</h4>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <i class="fas fa-award"></i>
+                                <span>記念品プレゼント</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>お弁当・飲み物支給</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>ボランティア証明書発行</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-heart"></i>
+                                <span>地域貢献活動の実績</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-users"></i>
+                                <span>新しい仲間との出会い</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600">
+                    <div class="volunteer-info-card">
+                        <h4><i class="fas fa-check me-2"></i>応募条件</h4>
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>高校生以上（高校生は保護者同意必要）</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-heart"></i>
+                                <span>地域貢献への意欲をお持ちの方</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-comments"></i>
+                                <span>基本的なコミュニケーション力</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>責任感をもって活動できる方</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="700">
+                <div class="volunteer-cta">
+                    <h4>ボランティア参加をお待ちしています！</h4>
+                    <p>お気軽にお問い合わせください。詳細説明会も開催予定です。</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-heart me-2"></i>
+                        ボランティア応募・お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title" data-aos="fade-up">
+                            <i class="fas fa-envelope me-3"></i>
+                            お問い合わせ
+                        </h2>
+                        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                            ご質問・ご相談はお気軽にお問い合わせください
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">
+                                        お名前 <span class="required">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">
+                                        メールアドレス <span class="required">*</span>
+                                    </label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">電話番号</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="organization" class="form-label">所属・団体名</label>
+                                    <input type="text" class="form-control" id="organization" name="organization">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">
+                                        お問い合わせ種別 <span class="required">*</span>
+                                    </label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">選択してください</option>
+                                        <option value="general">一般的なお問い合わせ</option>
+                                        <option value="exhibitor">出店について</option>
+                                        <option value="sponsor">協賛について</option>
+                                        <option value="volunteer">ボランティアについて</option>
+                                        <option value="access">アクセス・会場について</option>
+                                        <option value="media">取材・メディアについて</option>
+                                        <option value="other">その他</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">
+                                        お問い合わせ内容 <span class="required">*</span>
+                                    </label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required placeholder="お問い合わせ内容を詳しくお書きください"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            <a href="#privacy-policy" class="privacy-link">プライバシーポリシー</a>に同意します <span class="required">*</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        送信する
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="contact-card mb-4">
+                            <h4><i class="fas fa-building me-2"></i>主催者情報</h4>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-building"></i>
+                                    <div>
+                                        <strong>主催</strong>
+                                        <p>茨城県商工会</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>電話</strong>
+                                        <p>000-0000-0000<br><small>平日 9:00-17:00</small></p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>メール</strong>
+                                        <p>info@blue-expo.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>所在地</strong>
+                                        <p>茨城県筑西市<br>（詳細住所は後日公開）</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h4><i class="fas fa-clock me-2"></i>お問い合わせ対応時間</h4>
+                            <div class="office-hours">
+                                <div class="hours-item">
+                                    <span class="day">平日</span>
+                                    <span class="time">9:00 - 17:00</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">土日祝</span>
+                                    <span class="time">休業</span>
+                                </div>
+                            </div>
+                            <p class="hours-note">
+                                <i class="fas fa-info-circle"></i>
+                                お急ぎの場合はメールでお問い合わせください。
+                                2営業日以内にご返信いたします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <div class="footer-brand mb-4">
+                            <div class="footer-logo">
+                                <i class="fas fa-water"></i>
+                                <div class="footer-brand-text">
+                                    <span class="footer-brand-name">Blue Expo</span>
+                                    <span class="footer-brand-subtitle">ブルーエキスポ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            茨城県筑西市で開催される地域貢献イベント「Blue Expo（ブルーエキスポ）」の公式サイトです。
+                            地域の魅力を発信し、つながりを深める特別なイベントにぜひご参加ください。
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LINE">
+                                <i class="fab fa-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-section">
+                        <h5 class="footer-title">サイトマップ</h5>
+                        <ul class="footer-links">
+                            <li><a href="#home">ホーム</a></li>
+                            <li><a href="#about">開催概要</a></li>
+                            <li><a href="#program">プログラム</a></li>
+                            <li><a href="#access">アクセス</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-section">
+                        <h5 class="footer-title">参加情報</h5>
+                        <ul class="footer-links">
+                            <li><a href="#exhibitors">出店者・協賛</a></li>
+                            <li><a href="#volunteer">ボランティア</a></li>
+                            <li><a href="#contact">お問い合わせ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="footer-section">
+                        <h5 class="footer-title">お問い合わせ・最新情報</h5>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>000-0000-0000</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@blue-expo.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-hashtag"></i>
+                                <span>#ブルーエキスポ</span>
+                            </div>
+                        </div>
+                        
+                        <div class="newsletter mt-4">
+                            <h6 class="newsletter-title">最新情報をお届け</h6>
+                            <p class="newsletter-description">イベントの最新情報をメールでお届けします</p>
+                            <div class="newsletter-form">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="メールアドレス" aria-label="メールアドレス">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">&copy; 2024 Blue Expo. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-legal">
+                        <li><a href="#privacy-policy">プライバシーポリシー</a></li>
+                        <li><a href="#terms">利用規約</a></li>
+                        <li><a href="#sitemap">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="ページトップへ戻る">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
