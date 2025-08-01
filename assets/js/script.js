@@ -23,7 +23,7 @@ $(document).ready(function() {
             const heroSwiper = new Swiper('.hero-swiper', {
                 loop: true,
                 autoplay: {
-                    delay: 5000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 },
                 effect: 'fade',
